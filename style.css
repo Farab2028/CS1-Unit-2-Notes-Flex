@@ -1,11 +1,30 @@
 .flex-item {
     background: lightpink;
-    width: 50px;
-    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
     border: 2px solid grey;
 }
 
 .flex-container {
     display: flex;
-    justify-content:space-around;  
+    justify-content:space-around;
+    align-items: stretch;
+border: 3px solid black;
+height: 200px;
+
+}
+
+/* Can change the direction back to colum, but it means the MAIN AXIS switches */
+.flex-container-col {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid rgb(255, 18, 255);
+    height: 200px;
+
+}
+
+#special {
+    flex-grow: 1;
 }
